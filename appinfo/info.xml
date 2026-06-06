@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
-    <id>local-llm-nextcloud</id>
+    <id>local-llm</id>
     <name>Local LLM Chat for Nextcloud</name>
     <summary>Integrate Local LLMs (Ollama, LM Studio) into Nextcloud for AI-powered assistance</summary>
     <description><![CDATA[
@@ -49,17 +49,17 @@ A powerful Nextcloud app that integrates local Large Language Models (LLMs) dire
     <author mail="mail@markus-begerow.de">Markus Begerow</author>
     <namespace>LocalLlm</namespace>
     <category>tools</category>
-    <bugs>https://github.com/markusbegerow/local-llm-nextcloud/issues</bugs>
-    <repository>https://github.com/markusbegerow/local-llm-nextcloud</repository>
+    <bugs>https://github.com/markusbegerow/nextcloud-local-llm/issues</bugs>
+    <repository>https://github.com/markusbegerow/nextcloud-local-llm</repository>
     <screenshot>https://github.com/user-attachments/assets/21fd6cc9-7f4d-4295-946e-cbf8344c1072</screenshot>
     <dependencies>
-        <nextcloud min-version="28" max-version="30"/>
+        <nextcloud min-version="28" max-version="33"/>
         <php min-version="8.1"/>
     </dependencies>
     <navigations>
         <navigation>
             <name>Local LLM</name>
-            <route>local-llm-nextcloud.page.index</route>
+            <route>local-llm.page.index</route>
             <icon>app.svg</icon>
         </navigation>
     </navigations>

@@ -21,9 +21,9 @@ class PageController extends Controller {
      * @NoCSRFRequired
      */
     public function index(): TemplateResponse {
-        Util::addScript('local-llm-nextcloud', 'local-llm-nextcloud-main');
-        Util::addStyle('local-llm-nextcloud', 'style');
+        Util::addScript('local-llm', 'local-llm-nextcloud-main');
+        Util::addStyle('local-llm', 'style');
 
-        return new TemplateResponse('local-llm-nextcloud', 'main');
+        return new TemplateResponse('local-llm', 'main');
     }
 }
